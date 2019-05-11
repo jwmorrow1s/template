@@ -1,3 +1,8 @@
+html, body, #root{
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +16,44 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#Header {
+  background-color: red;
+  flex-grow: 1;
+}
+
+#MainContent {
+  background-color: blue;
+  flex-grow: 8;
+  flex-direction:row;
+  display: flex;
+}
+
+#LeftContent{
+  background-color: antiquewhite;
+  flex-grow: 1;
+}
+
+#CenterContent{
+  background-color: blueviolet;
+  flex-grow: 8;
+}
+
+#RightContent{
+  background-color: cyan;
+  flex-grow: 1;
+}
+
+#Footer {
+  background-color: green;
+  flex-grow: 1;
 }
